@@ -1,6 +1,7 @@
 import React from 'react';
 import Destinations from '../component/Destinations';
 import Services from '../component/Services';
+import Clients from '../component/Clients';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
     </div>
     <Destinations/>
     <Services/>
+    <Clients/>
     /</>
   );
 }
