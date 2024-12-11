@@ -13,12 +13,12 @@ const destinations =[
     },
     {
         image: 'assets/AbbaJifar',
-        title: 'Abba Jifar',
+        title: 'Abba Jifar palace',
         description: 'Aba Jifar Palace is the most important heritage site in the Oromia Region of Ethiopia, and a symbol of Oromia cultural identity. Located on the outskirts of the city of Jimma, the capital of the region, the current Palace was built by King Aba Jifar II in the 1880s on a site located seven kilometers north of Jimma and chosen by the King’s father.'
     },
     {
         image: 'assets/Entoto park.jpg',
-        title: 'Intoto Park',
+        title: 'Intoto Natural Park',
         description: 'Entoto Natural Park is the unique place to discover the vastest primaeval mountain area with streams flowing out from clear springs and waterfall where it amazes with absolutely stunningly dramatic places for relaxation or completely hilarious water activities in diverse meandering streams which continues to naturally create hidden rock vaults.'
     },
 ];
