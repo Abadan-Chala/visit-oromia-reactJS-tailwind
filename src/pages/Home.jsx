@@ -1,7 +1,9 @@
 import React from 'react';
+import Destinations from '../component/Destinations';
 
 const Home = () => {
   return (
+    <>
     <div className='relative h-screen bg-cover bg-center' style={{backgroundImage : "url('/assets/bg2')"}}>
       <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center'>
         <h1 className='text-4xl md:text-6xl font-bold text-white mb-4'>Visit Oromia With Us</h1>
@@ -10,6 +12,8 @@ const Home = () => {
         >Get Started</button>
       </div>
     </div>
+    <Destinations/>
+    /</>
   );
 }
 
