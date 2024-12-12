@@ -2,10 +2,10 @@ import React from 'react';
 
 const testimonials =[
     {
-        name: 'james',
+        name: 'James',
         image: '/assets/james.jpg',
         text: 'The lake is the beautiful legacy of a once powerful volcano erupting in the Tertiary period of the Cenozoic Era. The volcano erupted about 1000 years ago and left asymmetric caldera of rock which is now covered in lush green vegetation.',
-        location:'Sydney, Australia'
+        location:'USA'
     },
     {
         name: 'Sarah',
@@ -16,12 +16,12 @@ const testimonials =[
         name: 'Paul',
         image: '/assets/paul.jpg',
         text: 'The lake is the beautiful legacy of a once powerful volcano erupting in the Tertiary period of the Cenozoic Era. The volcano erupted about 1000 years ago and left asymmetric caldera of rock which is now covered in lush green vegetation.',
-        location:'Sydney, Australia' },
+        location:'Jarman' },
     {
         name: 'David',
         image: '/assets/chadrik.jpg',
         text: 'The lake is the beautiful legacy of a once powerful volcano erupting in the Tertiary period of the Cenozoic Era. The volcano erupted about 1000 years ago and left asymmetric caldera of rock which is now covered in lush green vegetation.',
-        location:'Sydney, Australia'
+        location:'UK'
      },
 ];
 
