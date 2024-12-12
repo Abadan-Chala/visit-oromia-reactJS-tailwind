@@ -18,11 +18,11 @@ const Gallery = () => {
         <h4 className='text-4xl md:text-6xl font-bold text-white mb-4'>Gallery</h4>
       </div>
     </div>
-        <div>
-            <div>
+        <div className='container mx-auto px-4 py-12'>
+            <div className='grid gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
                 {images.map(image=> (
-                    <div>
-                        <img src={image} alt="" />
+                    <div className='rounded-lg overflow-hidden shadow-md transform transition duration-300 hover:scale-105'>
+                        <img src={image} alt=""  className='w-full h-full object-cover'/>
                     </div>
                 ))}
             </div>
