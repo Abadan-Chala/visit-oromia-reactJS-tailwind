@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/Home';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
+import Gallery from './pages/Gallery';
 
 const App =() => {
   return (
@@ -11,6 +12,7 @@ const App =() => {
       <Navbar/>
       <Routes>
         <Route path ="/" element={<Home/>}></Route>
+        <Route path ="/gallery" element={<Gallery/>}></Route>
       </Routes>
       <Footer/>
     </BrowserRouter>
