@@ -2,6 +2,7 @@ import React from 'react';
 import Destinations from '../component/Destinations';
 import Services from '../component/Services';
 import Clients from '../component/Clients';
+import Contactme from '../component/Contactme';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
     <Destinations/>
     <Services/>
     <Clients/>
+    <Contactme/>
     /</>
   );
 }
