@@ -1,15 +1,13 @@
 import React from 'react';
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa';
 
-const Contact = () => {
+const Contactme = () => {
   return (
-    <div className='bg-gray-100'>
-      <div className='relative h-screen bg-cover bg-center h-96' style={{backgroundImage : "url('/assets/bg2')"}}>
-       <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center'>
-        <h4 className='text-4xl md:text-6xl font-bold text-white mb-4'>Contact Us</h4>
+    <div>
+      <div>
+        <h2 className=' bg-gray-200 text-3xl font-bold text-center mb-8'>Contact Us</h2>
       </div>
-     </div>
-     <div className='container mx-auto px-4 py-12'>
+      <div className='container mx-auto px-4 py-12'>
         <div className='grid gap-8 sm:grid-cols-1 md:grid-cols-2'>
             <div className='bg-white rounded-lg shadow-md p-6'>
                 <h3 className='text-xl font-bold mb-4'>Contact Details</h3>
@@ -47,8 +45,11 @@ const Contact = () => {
             </div>
         </div>
      </div>
+
     </div>
+
+
   );
 }
 
-export default Contact;
+export default Contactme;
