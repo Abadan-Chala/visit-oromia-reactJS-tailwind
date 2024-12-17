@@ -13,10 +13,10 @@ const Footer = () => {
         <div className='flex flex-col md:items-center'>
             <h4 className='text-lg font-semibold'>Quick Links</h4>
             <div className='flex flex-col mt-4 space-y-2'>
-                <Link to="/">Home</Link>
-                <Link to="/gallery">Gallery</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/about">About</Link>
+                <Link to="/" className='text-white-600 hover: text-green-400'>Home</Link>
+                <Link to="/gallery" className='text-white-600 hover: text-green-400'>Gallery</Link>
+                <Link to="/contact" className='text-white-600 hover: text-green-400'>Contact</Link>
+                <Link to="/about" className='text-white-600 hover: text-green-400'>About</Link>
             </div>
         </div>
         <div>
@@ -34,7 +34,7 @@ const Footer = () => {
                 className='w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600'/>
                 <button
                 type='submit'
-                className='bg-blue-600 text-white px-4 py-2 rounded-r-lg border border-blue-600'>Subscribe</button>
+                className='bg-blue-600 text-white px-4 py-2 rounded-r-lg border border-blue-600 hover:bg-green-700 transform transition duration-300 hover:scale-105'>Subscribe</button>
             </form>
         </div>
       </div>
