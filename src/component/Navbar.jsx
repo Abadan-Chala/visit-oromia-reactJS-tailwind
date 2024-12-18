@@ -19,8 +19,10 @@ const Navbar = () => {
                     <Link to="/gallery" className='rounded-full px-6 py-2 hover:bg-gray-500 hover:text-white'>Gallery</Link>
                     <Link to="/contact" className='rounded-full px-6 py-2 hover:bg-gray-500 hover:text-white'>Contact</Link>
                     <Link to="/about" className='rounded-full px-6 py-2 hover:bg-gray-500 hover:text-white'>About</Link>
-                    <button className="rounded-full py-2 px-6 border bg-green-400 hover:bg-green-600 hover:text-white">Login</button>
-                    <button className="rounded-full py-2 px-6 border bg-green-400 hover:bg-green-600 hover:text-white">Sign Up</button>
+
+                    <Link to="/login" className="rounded-full py-2 px-6 border bg-green-400 hover:bg-green-600 hover:text-white">Login</Link>
+
+                    {/* <button className="rounded-full py-2 px-6 border bg-green-400 hover:bg-green-600 hover:text-white">Sign Up</button> */}
                 </div>
 
                 <div className='md:hidden'>
@@ -37,7 +39,7 @@ const Navbar = () => {
                     <Link to="/contact" className='rounded-full px-6 py-2 hover:bg-gray-600 hover:text-white' onClick={handleLinkClick}>Contact</Link>
                     <Link to="/about" className='rounded-full px-6 py-2 hover:bg-gray-600 hover:text-white' onClick={handleLinkClick}>About</Link>
                     <button className="rounded-full py-2 px-6 border bg-green-600 hover:bg-green-500 hover:text-white" onClick={handleLinkClick}>Login</button>
-                    <button className="rounded-full py-2 px-6 border bg-green-600 hover:bg-green-500 hover:text-white" onClick={handleLinkClick}>Sign Up</button>
+                    {/* <button className="rounded-full py-2 px-6 border bg-green-600 hover:bg-green-500 hover:text-white" onClick={handleLinkClick}>Sign Up</button> */}
                 </div>
             )}
         </nav>
