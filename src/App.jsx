@@ -7,6 +7,7 @@ import Footer from './component/Footer';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Welcome from './component/Welcome.js';
 
 const App =() => {
   return (
@@ -17,6 +18,7 @@ const App =() => {
         <Route path ="/gallery" element={<Gallery/>}></Route>
         <Route path ="/contact" element={<Contact/>}></Route>
         <Route path ="/about" element={<About/>}></Route>
+        <Route path ="/welcome" element={<Welcome/>}></Route>
       </Routes>
       <Footer/>
     </BrowserRouter>
