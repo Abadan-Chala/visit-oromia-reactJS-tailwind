@@ -13,7 +13,7 @@ const Contactme = () => {
                 <h3 className='text-xl font-bold mb-4'>Contact Details</h3>
                 <div className='flex items-center mb-4'>
                     <FaEnvelope className='text-blue-500 mr-2'/>
-                    <p>visitoromia@agency.com</p>
+                    <p>https://visitoromia.org/</p>
                 </div>
                 <div className='flex items-center mb-4'>
                     <FaPhone className='text-blue-500 mr-2'/>

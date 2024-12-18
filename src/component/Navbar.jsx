@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav className='fixed m-4 top-0 right-0 left-0 shadow-lg z-50 bg-white'>
             <div className='container px-4 flex justify-between items-center h-16'>
-                <Link to="/" className='border rounded-full text-2xl font-bold hover:bg-gray-200'>OROMIA.</Link>
+                <Link to="/" className='border text-white rounded-full text-2xl font-bold bg-red-700 hover:bg-black '>`OROMIA.</Link>
 
                 <div className='hidden md:flex space-x-4 text-sm font-bold items-center'>
                     <Link to="/" className='rounded-full px-6 py-2 hover:bg-gray-500 hover:text-white'>Home</Link>

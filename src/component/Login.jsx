@@ -26,13 +26,12 @@ const Login = () => {
     };
 
     const handleConfirm = () => {
-        // Simulate a successful registration
+        // Set the welcome message
         setMessage(`Welcome, ${fullName}! You have registered successfully!`);
+    };
 
-        // Redirect to home page after a short delay
-        setTimeout(() => {
-            navigate('/');
-        }, 2000);
+    const handleBackToHome = () => {
+        navigate('/');
     };
 
     const handleEdit = () => {
@@ -43,7 +42,7 @@ const Login = () => {
     return (
         <div className='flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4'>
             <div className='bg-white rounded-lg shadow-md p-6'>
-                <h3 className='text-2xl font-bold mb-4 text-center'>Login</h3>
+                <h3 className='text-2xl font-bold mb-4 text-center'>Your Profile</h3>
                 {message && <p className='text-green-500 text-center mb-4'>{message}</p>}
                 {!submitted ? (
                     <form onSubmit={handleSubmit}>
@@ -81,7 +80,7 @@ const Login = () => {
                             />
                         </div>
                         <div className='mb-4'>
-                            <label className='block text-black-700 mb-2'>Date of Birth</label>
+                            <label className='block text-black-700 mb-2'>Date</label>
                             <input
                                 type="date"
                                 className='w-full p-2 border border-gray-300 rounded'
@@ -141,6 +140,12 @@ const Login = () => {
                             className='py-2 px-4 border border-gray-300 rounded hover:bg-gray-200 mt-2'
                         >
                             Edit
+                        </button>
+                        <button
+                            onClick={handleBackToHome}
+                            className='py-2 px-4 border border-gray-300 rounded hover:bg-gray-200 mt-2'
+                        >
+                            Back to Home
                         </button>
                     </div>
                 )}
