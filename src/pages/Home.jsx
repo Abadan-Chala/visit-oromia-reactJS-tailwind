@@ -8,7 +8,7 @@ const Home = () => {
   const navigate = useNavigate();
 
     const handleGetStarted = () => {
-        navigate('/welcome'); // Use navigate instead of history.push
+        navigate('/welcome'); 
     };
   return (
     <>
