@@ -33,8 +33,8 @@ const Destinations = () => {
                 <div key={index} className='bg-gray-100 rounded-lg shadow-md overflow-hidden cursor-pointer'>
                     <img src={city.image} alt={city.title} className='w-full h-48 object-cover transform transition duration-300 hover:scale-110' />
                     <div className='p-4'>
-                        <h3 className='text-xl font-bold mb-2'>{city.title}</h3>
-                        <p className='text-gray-600'>{city.description}</p>
+                        <h3 className='text-xl font-bold mb-2 hover:text-green-600 transform transition duration-300 hover:scale-105'>{city.title}</h3>
+                        <p className='text-gray-600 hover:text-gray-700 transform transition duration-300 hover:scale-105'>{city.description}</p>
                     </div>
                 </div>
             ))}

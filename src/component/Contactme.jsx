@@ -9,12 +9,15 @@ const Contactme = () => {
       </div>
       <div className='container mx-auto px-4 py-12'>
         <div className='grid gap-8 sm:grid-cols-1 md:grid-cols-2'>
-            <div className='bg-gray-100 rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-110'>
+            <div className='bg-gray-100 rounded-lg shadow-md p-6 hover:text-green-900 transform transition duration-300 hover:scale-105'>
                 <h3 className='text-xl font-bold mb-4'>Contact Details</h3>
                 <div className='flex items-center mb-4'>
-                    <FaEnvelope className='text-blue-500 mr-2'/>
-                    <p>https://visitoromia.org/</p>
-                </div>
+    <FaEnvelope className='text-blue-500 mr-2' />
+    <a href="https://visitoromia.org/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline >
+            <div className='bg-gray-100 rounded-lg shadow-md p-6 hover:text-green-900 transform transition duration-300 hover:scale-105">
+        Visit Oromia
+    </a>
+</div>
                 <div className='flex items-center mb-4'>
                     <FaPhone className='text-blue-500 mr-2'/>
                     <p>+251 928 103 575</p>
@@ -25,7 +28,7 @@ const Contactme = () => {
                 </div> 
             </div>
 
-            <div className='bg-gray-100 rounded-lg shadow-md p-6  transform transition duration-300 hover:scale-110'>
+            <div className='bg-gray-100 rounded-lg shadow-md p-6 hover:text-green-900 transform transition duration-300 hover:scale-105'>
                 <h3 className='text-xl font-bold mb-4'>Get in touch</h3>
                 <form>
                     <div className='mb-4'>

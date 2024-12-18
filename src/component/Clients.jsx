@@ -32,12 +32,12 @@ const Clients = () => {
         <h2 className='text-4xl md:text-6xl font-bold text-center mb-10 hover:text-green-700 transform transition duration-300 hover:scale-105'>Testimonials</h2>
         <div className='grid gap-6 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3'>
             {testimonials.map((testimonials, index) =>(
-                <div key={index} className='bg-gray-100 rounded-lg shadow-md p-6 text-center cursor-pointer transform transition duration-300 hover:scale-110'>
+                <div key={index} className='bg-gray-100 rounded-lg shadow-md p-6 text-center cursor-pointer'>
                     <img src={testimonials.image} alt="" className='w-24 h-24 rounded-full mx-auto mb-4'/>
                    
-                        <h3 className='text-xl font-bold mb-2 text-green-700'>{testimonials.name}</h3>
-                        <p className='text-gray-700 font-bold'>{testimonials.location}</p>
-                        <p className='text-gray-500 italic'>{testimonials.text}</p>
+                        <h3 className='text-xl font-bold mb-4 text-green-700 hover:text-green-600 transform transition duration-300 hover:scale-105'>{testimonials.name}</h3>
+                        <p className='text-gray-700 mb-8 font-bold hover:text-green-600 transform transition duration-300 hover:scale-105'>{testimonials.location}</p>
+                        <p className='text-gray-500 italic hover:text-gray-700 transform transition duration-300 hover:scale-105'>{testimonials.text}</p>
                   
                 </div>
             ))}
