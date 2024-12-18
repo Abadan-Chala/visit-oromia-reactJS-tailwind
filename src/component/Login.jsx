@@ -15,18 +15,18 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Validate that all fields are filled
+       
         if (!fullName || !email || !country || !date || !sex || !password) {
             alert("Please fill out all fields.");
             return;
         }
 
-        // Set submitted state to true to show confirmation
+        
         setSubmitted(true);
     };
 
     const handleConfirm = () => {
-        // Set the welcome message
+        
         setMessage(`Welcome, ${fullName}! You have registered successfully!`);
     };
 
@@ -35,7 +35,7 @@ const Login = () => {
     };
 
     const handleEdit = () => {
-        // Reset submitted state to allow editing
+        
         setSubmitted(false);
     };
 
@@ -127,7 +127,7 @@ const Login = () => {
                         <p><strong>Full Name:</strong> {fullName}</p>
                         <p><strong>Email:</strong> {email}</p>
                         <p><strong>Country:</strong> {country}</p>
-                        <p><strong>Date of Birth:</strong> {date}</p>
+                        <p><strong>Your coming date:</strong> {date}</p>
                         <p><strong>Sex:</strong> {sex}</p>
                         <button
                             onClick={handleConfirm}

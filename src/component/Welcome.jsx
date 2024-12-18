@@ -11,17 +11,17 @@ const Welcome = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Validate that all fields are filled
+        
         if (!name || !email || !message) {
             alert("Please fill out all fields.");
             return;
         }
 
-        // Simulate a successful submission (e.g., send to an API)
+        
         setSuccess(true);
         setTimeout(() => {
-            navigate('/'); // Redirect to home after a delay
-        }, 2000); // Wait 2 seconds before redirecting
+            navigate('/');
+        }, 2000);
     };
 
     return (
@@ -34,7 +34,7 @@ const Welcome = () => {
                     </div>
                 ) : (
                     <>
-                        <h3 className='text-2xl font-bold mb-4 text-center'>Welcome to Oromia!</h3>
+                        <h3 className='text-3xl font-bold mb-4 text-center'>Welcome to Oromia!</h3>
                         <p className='mb-4 text-center'>
                             We are thrilled to have you here. Please fill out the form below to get in touch with us.
                         </p>
