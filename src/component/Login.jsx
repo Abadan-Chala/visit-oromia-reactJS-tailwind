@@ -10,32 +10,35 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [submitted, setSubmitted] = useState(false);
     const [message, setMessage] = useState('');
+    const [confirmDialog, setConfirmDialog] = useState(false);
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-       
         if (!fullName || !email || !country || !date || !sex || !password) {
             alert("Please fill out all fields.");
             return;
         }
-
-        
         setSubmitted(true);
     };
 
     const handleConfirm = () => {
-        
         setMessage(`Welcome, ${fullName}! You have registered successfully!`);
     };
 
     const handleBackToHome = () => {
-        navigate('/');
+        setConfirmDialog(true); // Open confirmation dialog
+    };
+
+    const confirmNavigation = (confirm) => {
+        if (confirm) {
+            navigate('/');
+        } else {
+            setConfirmDialog(false); // Close dialog and stay on confirmation page
+        }
     };
 
     const handleEdit = () => {
-        
         setSubmitted(false);
     };
 
@@ -122,7 +125,7 @@ const Login = () => {
                         </button>
                     </form>
                 ) : (
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col items-start'>
                         <h4 className='text-lg font-bold mb-4'>Please confirm your details:</h4>
                         <p><strong>Full Name:</strong> {fullName}</p>
                         <p><strong>Email:</strong> {email}</p>
@@ -150,6 +153,29 @@ const Login = () => {
                     </div>
                 )}
             </div>
+
+            {/* Confirmation Dialog */}
+            {confirmDialog && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-6 rounded shadow-md">
+                        <h4 className="text-lg font-bold">Are you sure you want to go back to the home page?</h4>
+                        <div className="mt-4">
+                            <button
+                                onClick={() => confirmNavigation(true)}
+                                className='py-2 px-4 bg-green-500 text-white rounded hover:bg-green-700 mr-2'
+                            >
+                                Yes
+                            </button>
+                            <button
+                                onClick={() => confirmNavigation(false)}
+                                className='py-2 px-4 border border-gray-300 rounded hover:bg-gray-200'
+                            >
+                                No
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
