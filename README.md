@@ -3,16 +3,6 @@
 
 Welcome to Visit Oromia Website! This project is developed using ReactJS and styled with Tailwind CSS. The website aims to provide users with an engaging platform to explore the culture, history, and attractions of the Oromia region.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - User-friendly interface for exploring Oromia's attractions tourism.
