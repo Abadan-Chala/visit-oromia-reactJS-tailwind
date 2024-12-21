@@ -2,18 +2,18 @@ import React from 'react';
 
 const testimonials =[
     {
-        name: 'James',
+        name: 'James Dev',
         image: '/assets/james.jpg',
         text: 'During my recent visit to Oromia, Ethiopia, I was profoundly moved by the rich culture and warm hospitality of the Oromo people. From the stunning landscapes of the Bale Mountains to the vibrant markets filled with traditional crafts and spices, every moment was a new discovery. I had the privilege of participating in a traditional coffee ceremony, which beautifully symbolizes the significance of coffee in Oromo culture. The locals shared their stories, showcasing their deep connection to the land and their unwavering spirit. This experience not only broadened my understanding of Ethiopia`s diverse heritage but also left me with lasting friendships and cherished memories. Oromia truly embodies the essence of community and tradition, making it a remarkable destination for any traveler.',
         location:'USA'
     },
     {
-        name: 'Hannah',
+        name: 'Hannah Tommy',
         image: '/assets/Sarah.jpg',
         text: 'My visit to Oromia, Ethiopia, was an unforgettable experience, especially exploring the breathtaking landscapes of Wanchi Lake and Bale National Park. Wanchi Lake, with its stunning blue waters surrounded by lush greenery, offered a serene escape that felt like a hidden paradise. I enjoyed a peaceful boat ride, taking in the incredible views while learning about the local flora and fauna. Later, my adventure continued in Bale National Park, where I was awed by the diverse wildlife, including the rare Ethiopian wolf and captivating birds. Hiking through the park’s rugged terrain, I felt a deep connection to nature and the vibrant ecosystems that thrive there. The beauty and tranquility of Oromia, paired with the warmth of its people, left a lasting impression on my heart, making it a destination I will cherish forever.',
         location:'Germany'},
     {
-        name: 'Pauls',
+        name: 'Pauls Luke',
         image: '/assets/paul.jpg',
         text: 'My journey to Oromia, Ethiopia, was a deeply enriching experience that opened my eyes to the rich histories and vibrant cultures of the Oromo people. From the moment I arrived, I was captivated by the stories of resilience and pride that echoed through the villages. I had the privilege of participating in traditional ceremonies, where I learned about the significance of the Gadaa system, an age-old democratic governance structure that highlights the community`s commitment to equality and justice. The warmth and hospitality of the Oromo people made me feel like part of their extended family, as they shared their music, dances, and delicious local cuisine, which reflected their diverse heritage. Each encounter deepened my appreciation for their customs and traditions, leaving me with a profound respect for a culture that has thrived for centuries amidst change. My time in Oromia has inspired me to share these stories and celebrate the rich tapestry of Oromo culture with others back home in Australia.',
         location:'Australia' },
