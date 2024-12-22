@@ -17,10 +17,10 @@ const Navbar = () => {
   };
 
     return (
-        <nav className='fixed m-4 top-0 right-0 left-0 shadow-lg z-50 bg-white'>
+        <nav className='fixed  top-0 right-0 left-0 shadow-lg z-50 bg-white'>
             <div className='container px-4 flex justify-between items-center h-16'>
-                <Link to="/" onClick={LogoClick} className='border text-white rounded-full text-2xl font-bold bg-red-900 hover:bg-black transform transition duration-300 hover:scale-105 hover:text-red-800'>
-                    OROMIA.
+                <Link to="/" onClick={LogoClick} className='border text-white rounded-full text-2xl font-bold bg-red-900 hover:bg-black transform transition px-2 py-1 duration-300 hover:scale-105 hover:text-red-800'>
+                    OROMIA
                 </Link>
 
                 <div className='hidden md:flex space-x-4 text-sm font-bold items-center'>
@@ -39,7 +39,7 @@ const Navbar = () => {
             </div>
 
             {isOpen && (
-                <div className='md:hidden flex space-y-6 py-4 flex-col bg-gray-700 bg-opacity-60 items-center'>
+                <div className='md:hidden flex space-y-6 py-4 mt-4 flex-col bg-gray-700 bg-opacity-60 items-center'>
                     <Link to="/" className='rounded-full px-6 py-2 hover:text-green-300 transform transition duration-300 hover:scale-105' onClick={LinkClick}>Home</Link>
                     <Link to="/gallery" className='rounded-full px-6 py-2 hover:text-green-300 transform transition duration-300 hover:scale-105' onClick={LinkClick}>Gallery</Link>
                     <Link to="/contact" className='rounded-full px-6 py-2 hover:text-green-300 transform transition duration-300 hover:scale-105' onClick={LinkClick}>Contact</Link>

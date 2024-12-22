@@ -28,7 +28,7 @@ const Home = () => {
     <Services/>
     <Clients/>
     <Contactme/>
-    /</>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='bg-gray-800 py-8 text-white'>
+    <div className='bg-gray-800 py-8 text-white px-4'>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
         <div>
             <h2 className='text-2xl font-bold mb-4'>Oromia Tourism Agency</h2>
@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col md:items-center'>
             <h4 className='text-lg font-semibold'>Quick Links</h4>
-            <div className='flex flex-col mt-4 space-y-2'>
+            <div className='flex mt-4 gap-4'>
                 <Link to="/" className='text-white-600 hover: text-green-400'>Home</Link>
                 <Link to="/gallery" className='text-white-600 hover: text-green-400'>Gallery</Link>
                 <Link to="/contact" className='text-white-600 hover: text-green-400'>Contact</Link>
@@ -27,14 +27,14 @@ const Footer = () => {
                 <FaTwitter size={24} className='text-blue-400 hover:text-blue-500'/>
                 <FaYoutube size={24} className='text-red-500 hover:text-red-600'/>
             </div>
-            <form className='flex items-center justify-center mt-8'>
+            <form className='flex items-center justify-center gap-2 mt-8'>
                 <input
                 type="email" 
                 placeholder='Your Email' 
-                className='w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600'/>
+                className='w-full p-2 rounded-lg bg-gray-800 border border-gray-600'/>
                 <button
                 type='submit'
-                className='bg-blue-600 text-white px-4 py-2 rounded-r-lg border border-blue-600 hover:bg-green-700 transform transition duration-300 hover:scale-105'>Subscribe</button>
+                className='bg-blue-600 text-white px-4 py-2 rounded-lg border border-blue-600 hover:bg-green-700 transform transition duration-300 hover:scale-105'>Subscribe</button>
             </form>
         </div>
       </div>
